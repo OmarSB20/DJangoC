@@ -1,0 +1,25 @@
+{%extends 'base.html'%}
+{%block content%}
+<h1>Tasks</h1>
+
+{% for task in tasks %}
+<div>
+    {# comentario #}
+    <h2>{{task.title}} {%if task.done%}✅{%else%}❏{%endif%}</h2>
+    {%if task.done%}
+    <p>Task done</p>
+    {%endif%}
+    <p>{{task.description}}</p>
+    <p>Project: {{task.project.name}}</p>
+    <button>
+        Update
+    </button>
+    <button>
+        Delete
+    </button>
+    <button>
+        Done
+    </button>
+</div>
+{% endfor %}
+{%endblock%}
