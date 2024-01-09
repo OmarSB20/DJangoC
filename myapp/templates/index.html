@@ -1,6 +1,8 @@
-{% extends 'base.html' %}
+{% extends 'layouts/base.html' %}
 
+{%load static%}
 {%block content%}
 <h1>{{title}}</h1>
+<img src="{% static 'wallhaven-13x79v_2560x1440.png'%}" alt="sun" width="60%">
 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio delectus quam, inventore, nesciunt adipisci vel eos natus repellat impedit quas culpa nulla. Vel quas odio libero possimus consequuntur dignissimos delectus!</p>
 {%endblock%}

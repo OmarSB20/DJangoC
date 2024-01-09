@@ -1,0 +1,9 @@
+{%extends 'layouts/base.html'%}
+{%block content%}
+<h1>Project Details</h1>
+<h2>{{project.name}}</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam, animi deleniti iure voluptatum quia sed possimus similique repellat! Velit nobis perferendis vel rem, ex quo ducimus! Ipsum, placeat! Quisquam quo modi ducimus deserunt officia. Sequi soluta qui nihil voluptatibus repellendus, ratione optio. Molestiae veniam accusantium eveniet fuga possimus reiciendis rem molestias ad. Doloribus labore soluta eligendi aut, alias ipsam deserunt facilis veniam, vero, amet nulla repellat impedit necessitatibus? Modi voluptatem est sunt nam recusandae. Atque, natus delectus, est provident consequuntur vero nemo ratione totam facere esse perspiciatis incidunt fuga vitae omnis! Deleniti corporis distinctio vero dolorem autem. Doloribus, sunt.</p>
+{%for task in tasks%}
+{{task.title}}
+{%endfor%}
+{%endblock%}
